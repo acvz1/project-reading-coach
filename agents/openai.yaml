@@ -1,0 +1,6 @@
+interface:
+  display_name: "Project Reading Coach"
+  short_description: "Guided codebase reading with durable notes"
+  default_prompt: "Use $project-reading-coach to help me read this project step by step, answer code questions, maintain concise notes, and extract reusable engineering lessons."
+policy:
+  allow_implicit_invocation: true
