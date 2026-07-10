@@ -1,4 +1,4 @@
-# Project Reading Coach
+# 项目研读助手skill
 
 一个可复用的 Codex Skill，用于带领学习者逐步阅读软件项目、理解代码结构，并沉淀成可复盘的 Markdown 学习笔记。
 
