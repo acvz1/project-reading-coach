@@ -18,6 +18,16 @@ Use a chapter or milestone summary only after the main concepts have been questi
 
 Do not mark a chapter complete because the assistant reached the end of a file.
 
+## Granularity and Checkpoints
+
+Treat a concept as independently reviewable when the learner could later ask about it without needing the whole chapter. Give each such concept its own numbered heading and quick-index entry.
+
+- Batch confirmed concepts at a coherent chain boundary, normally after 2-4 independently reviewable causal chains.
+- Add a chapter or milestone summary after the concept entries; never use one summary as a substitute for them.
+- Track the last saved number, index entry, and pending confirmed concepts in the session note checkpoint.
+- Before marking a chapter complete, map every confirmed concept since the previous checkpoint to exactly one index entry and numbered heading.
+- Do not record transient debugging noise unless it establishes a reusable cause, boundary, or verification method.
+
 ## Required Causal Spine
 
 Every useful note must preserve:
@@ -87,6 +97,8 @@ compact conclusion
 ~~~
 
 Include concrete code only where it carries a business decision or an unfamiliar mechanism. Skip imports, getters/setters, repetitive CRUD, and equivalent branches.
+
+When learner ownership matters, distinguish learner-written core decisions from assistant-written support code using observed edits or the explicit coding contract. Do not infer ownership from commit authorship alone.
 
 ## Editing Discipline
 

@@ -23,6 +23,21 @@ response/output
 
 Give each layer one responsibility and one non-responsibility. Follow one request end to end before listing secondary modules.
 
+## Resource Ownership and Path Invariants
+
+Before implementing around repositories, workspaces, sandboxes, uploads, sessions, or mounted storage, establish one concrete example:
+
+~~~text
+who selects or owns the resource
+physical location
+virtual or logical alias
+component that performs the mapping
+actual write target
+what is and is not isolated or persisted
+~~~
+
+Do not continue from an ambiguous phrase such as "workspace" when two layers use it differently.
+
 ## Module Summary
 
 Include:
@@ -73,6 +88,16 @@ Estimate by functional unit unless a calendar is explicitly requested. A plan is
 
 Do not describe planned features as project strengths. Only implemented and verified behavior may become a resume claim.
 
+## Progress Reporting
+
+Calculate progress from the canonical functional units and their acceptance evidence:
+
+~~~text
+completed verified units / total committed units
+~~~
+
+Lead with the percentage when asked for progress. Then state the current unit, remaining critical units, and blockers. Keep forecasts conditional on functional scope; do not estimate from elapsed days, generated code volume, or test count alone.
+
 ## Chapter or Milestone Summary
 
 Build the summary in this order:
@@ -88,6 +113,8 @@ compact mental model
 ~~~
 
 Do not write a milestone summary while the learner remains confused about its central call chain.
+
+After implementation, explicitly connect every new data structure and tool to the existing production entry, runtime handoff, state transition, and final observable result. A list of classes is not an integration summary.
 
 ## Reading Direction
 
