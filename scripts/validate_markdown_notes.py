@@ -10,7 +10,9 @@ from collections import Counter
 from pathlib import Path
 
 
-INDEX_PATTERN = re.compile(r"^- \[(\d{3})\.\s+.+?\]\(#[^)]+\)\s*$")
+INDEX_PATTERN = re.compile(
+    r"^\s*(?:[-*+]\s+)?\[(\d{3})\.\s+.+?\]\(#[^)]+\)\s*$"
+)
 HEADING_PATTERN = re.compile(r"^###\s+(\d{3})\.\s+.+?\s*$")
 FENCE_PATTERN = re.compile(r"^\s*```")
 MARKDOWN_IMAGE_PATTERN = re.compile(r"!\[[^\]]*\]\(([^)]+)\)")
